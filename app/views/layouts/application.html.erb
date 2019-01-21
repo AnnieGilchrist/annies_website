@@ -3,14 +3,34 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>TODO</title>
+    <title>Anneliese Gilchrist</title>
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
+    <div class="navbar-laptop">
+      <div class="name">
+        <h1><%= link_to "Anneliese Gilchrist", root_path %></h1>
+      </div>
+      <div class="menu">
+        <div>
+          <h4>painting with inks</h4>
+        </div>
+        <div>
+          <ul class="list-inline">
+            <li class="first list-inline-item nav"><%= link_to "art", landscapes_path  %></li>
+            <li class="list-inline-item nav"><%= link_to "exhibitions", exhibitions_path %></li>
+            <li class="list-inline-item nav"><%= link_to "about", about_path %></li>
+            <li class="list-inline-item nav"><%= link_to "contact", contact_path %></li>
+            <li class="last list-inline-item nav"><%= link_to "https://www.instagram.com/agilchrist.art/", target: :_blank do %><i class="fab fa-instagram"></i><% end %></li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <%= yield %>
+    <div class="footer">© Anneliese Gilchrist 2019</div>
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
   </body>

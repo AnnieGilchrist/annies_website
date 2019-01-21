@@ -1,0 +1,32 @@
+h1 {
+  font-weight: 400;
+  color: $jet;
+  letter-spacing: 0.08em;
+  font-size: 48px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+h4 {
+  font-weight: 300;
+  font-style: italic;
+  color: $jet;
+  font-size: 20px;
+  letter-spacing: 0.08em;
+}
+li {
+  font-weight: 300;
+  color: $jet;
+  font-size: 20px;
+  letter-spacing: 0.08em;
+}
+a {
+  text-decoration: none !important;
+  color: $jet;
+  &:hover {
+    color: $jet;
+    font-weight: 400;
+  }
+  &:focus {
+    color: $jet;
+  }
+}

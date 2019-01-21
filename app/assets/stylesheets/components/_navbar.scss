@@ -1,3 +1,32 @@
+// Laptop Navbar
+.list-inline-item + .list-inline-item {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.list-inline-item.nav + .list-inline-item.nav {
+  border-left: 1px solid currentColor;
+}
+.list-inline-item.first {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+.list-inline-item.last {
+  padding-right: 0 !important;
+}
+.navbar-laptop {
+  padding: 20px 40px;
+  height: 160px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+
+
 /* Main navbar */
 .navbar-wagon {
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
