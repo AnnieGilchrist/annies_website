@@ -1,6 +1,9 @@
+.carousel-inner {
+  height: calc(100vh - 270px) !important;
+}
 .carousel-image {
-    max-width: none !important;
-    height: calc(100vh - 200px) !important;
+    max-width: 100% !important;
+    height: calc(100vh - 270px) !important;
     width: auto;
     margin: 0 auto;
 }

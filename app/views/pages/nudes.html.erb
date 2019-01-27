@@ -1,14 +1,13 @@
-<div id="myCarousel" class="web-body carousel slide">
+<div id="myCarousel" class="carousel slide">
   <div class="carousel-inner">
     <div class="item active">
-      <img class="carousel-image" src="/assets/playa1.JPG" alt="First slide">
+      <img class="carousel-image" src="/assets/avignon_nudes.jpg" alt="First slide">
     </div>
-    <div class="item">
-      <img class="carousel-image" src="/assets/playa2.JPG" alt="Second slide">
-    </div>
-    <div class="item">
-      <img class="carousel-image" src="/assets/playa3.JPG" alt="Third slide">
-    </div>
+    <% Dir.glob('app/assets/images/nudes/*').map do |path| %>
+      <div class="item">
+        <%= image_tag "/assets/nudes/#{File.basename(path)}", alt: "image slide", class:"carousel-image" %>
+      </div>
+    <% end.reduce(&:+) %>
   </div>
   <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left"></span>
@@ -21,9 +20,9 @@
 </div>
 <div class="art-menu">
   <ul class="list-inline">
-    <li class="first list-inline-item"><%= link_to "landscapes", landscapes_path  %></li>
-    <li class="list-inline-item"><%= link_to "portraits", portraits_path %></li>
-    <li class="list-inline-item"><%= link_to "still life", still_life_path %></li>
     <li class="list-inline-item" style="font-weight: 700"><%= link_to "nudes", nudes_path %></li>
+    <li class="list-inline-item"><%= link_to "people", portraits_path %></li>
+    <li class="list-inline-item"><%= link_to "still life", still_life_path %></li>
+    <li class="first list-inline-item"><%= link_to "landscapes", landscapes_path  %></li>
   </ul>
 </div>

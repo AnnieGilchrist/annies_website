@@ -1,3 +1,48 @@
-<div class="web-body">
-  <h1>Exhibitions</h1>
+<div id="exhibitionCarousel" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="item active">
+      <div class="exhibit-div">
+        <%= image_tag "/assets/exhibitions/candidart.jpeg", alt: "image slide", class:"exhibition-image" %>
+        <div class="exhibit-txt">
+          <h2>Summer Salon @ Candid Arts Trust</h2>
+          <p><strong>Date:</strong> 28 June - 8 July 2018<br><strong>Opening Times:</strong> 12-6pm<br><strong>Location:</strong> Candid Arts Trust, 3 Torrens Street, London EC1V 1NQ</p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="exhibit-div">
+        <%= image_tag "/assets/exhibitions/take_courage.jpg", alt: "image slide", class:"exhibition-image" %>
+        <div class="exhibit-txt">
+          <h2>Shelter Exhibition @ The Take Courage Gallery</h2>
+          <p><strong>Date:</strong> 21st June 2018<br><strong>Opening Times:</strong> 12-6pm<br><strong>Location:</strong> The Take Courage Gallery, Amersham Arms, 388 New Cross Road</p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="exhibit-div">
+        <%= image_tag "/assets/exhibitions/airfield.jpg", alt: "image slide", class:"exhibition-image" %>
+        <div class="exhibit-txt">
+          <h2>AIRFIELD @ St John's Square Gallery</h2>
+          <p><strong>Date:</strong> 20 March - 27 March 2017<br><strong>Opening Times:</strong> 12-8pm<br><strong>Location:</strong> The Gallery, Craft Central, 33-35 St John's Square, Clerkenwell, London EC1M 4DS</p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="exhibit-div">
+        <%= image_tag "/assets/exhibitions/berlin.jpg", alt: "image slide", class:"exhibition-image" %>
+        <div class="exhibit-txt">
+          <h2>Recorrido @ Remerge Berlin</h2>
+          <p><strong>Date:</strong> 21 July - 24 July 2016<br><strong>Opening Times:</strong> 12-6pm<br><strong>Location:</strong> Remerge, Oranienburger Strasse 27, 10117 Berlin, Germany</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="left carousel-control" href="#exhibitionCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#exhibitionCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" href="#myCarousel"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
