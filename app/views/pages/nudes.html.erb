@@ -2,7 +2,7 @@
   <div class="carousel-inner">
     <div class="item active">
       <div class="vertical-center">
-        <img class="carousel-image" src="avignon_nudes.jpg" alt="First slide">
+        <%= image_tag "avignon_nudes.jpg", alt: "First slide", class:"carousel-image" %>
       </div>
     </div>
     <% Dir.glob('app/assets/images/nudes/*').map do |path| %>
@@ -27,12 +27,12 @@
   <div class="carousel-inner">
     <div class="item active">
       <div class="vertical-center">
-        <img class="carousel-image" src="avignon-2-framed.jpg" alt="First slide">
+        <%= image_tag "avignon-2-framed.jpg", alt: "First slide", class:"carousel-image" %>
       </div>
     </div>
     <div class="item">
       <div class="vertical-center">
-        <img class="carousel-image" src="avignon-1-framed.jpg" alt="First slide">
+        <%= image_tag "avignon-1-framed.jpg", alt: "Second slide", class:"carousel-image" %>
       </div>
     </div>
     <% Dir.glob('app/assets/images/nudes/*').map do |path| %>

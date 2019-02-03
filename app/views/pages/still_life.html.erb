@@ -2,7 +2,7 @@
   <div class="carousel-inner">
     <div class="item active">
       <div class="vertical-center">
-        <img class="carousel-image" src="still_life1.jpg" alt="First slide">
+        <%= image_tag "still_life1.jpg", alt: "First slide", class:"carousel-image" %>
       </div>
     </div>
     <% Dir.glob('app/assets/images/still_lifes/*').map do |path| %>
