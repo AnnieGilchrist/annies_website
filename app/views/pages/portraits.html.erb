@@ -8,7 +8,7 @@
     <% Dir.glob('app/assets/images/portraits/*').map do |path| %>
       <div class="item">
         <div class="vertical-center">
-          <%= image_tag "/assets/portraits/#{File.basename(path)}", alt: "image slide", class:"carousel-image" %>
+          <%= image_tag "portraits/#{File.basename(path)}", alt: "image slide", class:"carousel-image" %>
         </div>
       </div>
     <% end.reduce(&:+) %>

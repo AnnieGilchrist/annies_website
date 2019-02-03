@@ -22,3 +22,7 @@ module AnniesWebsite
     # -- all .rb files in that directory are automatically loaded.
   end
 end
+
+Dir.glob("#{Rails.root}/app/assets/images/**/").each do |path|
+  Rails.application.config.assets.paths << path
+end
