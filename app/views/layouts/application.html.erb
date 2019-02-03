@@ -10,27 +10,52 @@
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
-    <div class="navbar-laptop">
-      <div class="name">
-        <h1><%= link_to "Anneliese Gilchrist", root_path %></h1>
-      </div>
-      <div class="menu">
-        <div>
-          <h4>painting with inks</h4>
+    <div class="page">
+      <div class="navbar-laptop">
+        <div class="name">
+          <h1><%= link_to "Anneliese Gilchrist", root_path %></h1>
         </div>
-        <div>
-          <ul class="list-inline">
-            <li class="first list-inline-item nav"><%= link_to "art", nudes_path  %></li>
-            <li class="list-inline-item nav"><%= link_to "exhibitions", exhibitions_path %></li>
-            <li class="list-inline-item nav"><%= link_to "about", about_path %></li>
-            <li class="list-inline-item nav"><%= link_to "contact", contact_path %></li>
-            <li class="last list-inline-item nav"><%= link_to "https://www.instagram.com/agilchrist.art/", target: :_blank do %><i class="fab fa-instagram"></i><% end %></li>
-          </ul>
+        <div class="menu">
+          <div>
+            <h4>painting with inks</h4>
+          </div>
+          <div class="hidden-xs hidden-sm hidden-md">
+            <ul class="list-inline">
+              <li class="first list-inline-item nav"><%= link_to "art", nudes_path  %></li>
+              <li class="list-inline-item nav"><%= link_to "exhibitions", exhibitions_path %></li>
+              <li class="list-inline-item nav"><%= link_to "about", about_path %></li>
+              <li class="list-inline-item nav"><%= link_to "contact", contact_path %></li>
+              <li class="last list-inline-item nav"><%= link_to "https://www.instagram.com/agilchrist.art/", target: :_blank do %><i class="fab fa-instagram"></i><% end %></li>
+            </ul>
+          </div>
+
+          <div class="hidden-lg hidden-xl">
+
+            <div class="dropdown">
+              <i class="fas fa-bars dropdown-toggle" data-toggle="dropdown" role="button"></i>
+              <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+                <li class="first nav"><%= link_to "art", nudes_path  %></li>
+                <li class="nav"><%= link_to "exhibitions", exhibitions_path %></li>
+                <li class="nav"><%= link_to "about", about_path %></li>
+                <li class="nav"><%= link_to "contact", contact_path %></li>
+                <li class="last nav"><%= link_to "https://www.instagram.com/agilchrist.art/", target: :_blank do %><i class="fab fa-instagram"></i><% end %></li>
+              </ul>
+
+<!--       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+        <li><a href="#">Host</a></li>
+        <li><a href="#">Trips</a></li>
+        <li><a href="#">Messagese</a></li>
+      </ul> -->
+            </div>
+
+
+          </div>
+
         </div>
       </div>
+      <%= yield %>
+      <div class="footer">© Anneliese Gilchrist 2019</div>
     </div>
-    <%= yield %>
-    <div class="footer">© Anneliese Gilchrist 2019</div>
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
   </body>

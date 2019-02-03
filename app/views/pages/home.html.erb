@@ -1,5 +1,22 @@
-<div class="web-body">
+<div class="web-body hidden-xs hidden-sm hidden-md">
   <%= image_tag "landscapes/landscape3.JPG", alt: "Anneliese Gilchrist beach painting mexico", class: "home_image" %>
   <%= image_tag "landscapes/landscape4.JPG", alt: "Anneliese Gilchrist beach painting mexico", class: "home_image" %>
   <%= image_tag "landscapes/landscape5.JPG", alt: "Anneliese Gilchrist beach painting mexico", class: "home_image" %>
+</div>
+<div class="mobile-background hidden-lg hidden-xl">
+  <div class="name">
+    <h1><%= link_to "Anneliese Gilchrist", root_path %></h1>
+    <h4>painting with inks</h4>
+  </div>
+
+  <div class="iphone-list">
+    <ul>
+      <li class="first nav"><%= link_to "art", nudes_path  %></li>
+      <li class="nav"><%= link_to "exhibitions", exhibitions_path %></li>
+      <li class="nav"><%= link_to "about", about_path %></li>
+      <li class="nav"><%= link_to "contact", contact_path %></li>
+      <li class="last nav"><%= link_to "https://www.instagram.com/agilchrist.art/", target: :_blank do %><i class="fab fa-instagram"></i><% end %></li>
+    </ul>
+  </div>
+  <div class="footer">© Anneliese Gilchrist 2019</div>
 </div>

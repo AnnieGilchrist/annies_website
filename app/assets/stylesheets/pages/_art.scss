@@ -1,10 +1,10 @@
 .carousel-inner {
   height: calc(100vh - 270px) !important;
+  width: 100%;
 }
 .carousel-image {
     max-width: 100% !important;
-    height: calc(100vh - 270px) !important;
-    width: auto;
+    max-height: calc(100vh - 290px) !important;
     margin: 0 auto;
 }
 .carousel-control.left, .carousel-control.right {
@@ -17,6 +17,23 @@
   margin-top: 30px;
   margin-bottom: 30px;
 }
+.art-menu-small {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  ul {
+    text-align: center;
+    li {
+      width: 50vw;
+    }
+  }
+}
 .glyphicon {
   color: $jet;
+}
+.vertical-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 270px);
+  width: 100%;
 }

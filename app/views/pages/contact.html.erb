@@ -1,5 +1,13 @@
-<div class="web-body">
-  <h1>Contact</h1>
+<div class="about">
+  <%= image_tag "/assets/portrait1.jpg", alt: "a gilchrist headshot", class:"headshot hidden-xs hidden-sm hidden-md" %>
+  <div class="about-txt">
+    <div class="symbol">
+      <%= mail_to 'mail@anneliesegilchrist.com' do %>
+        <i class="fas fa-envelope"></i><br><p>_</p>
+      <% end %>
+    </div>
+    <p class="contact-txt"> For enquiries about the artist’s work, future exhibitions or to join our mailing list, please send an email to: <%= mail_to 'mail@anneliesegilchrist.com', 'mail@anneliesegilchrist.com' %></p>
+  </div>
 </div>
 
 
